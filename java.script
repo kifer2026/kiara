@@ -1,0 +1,32 @@
+// Smooth scroll para o botão "Saiba Mais"
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+
+// Contador animado para os números
+const counters = [
+    { id: 'hectares', target: 25000 },
+    { id: 'clientes', target: 1500 },
+    { id: 'projetos', target: 850 }
+];
+
+counters.forEach(counter => {
+    let current = 0;
+    const step = Math.ceil(counter.target / 100);
+    const interval = setInterval(() => {
+        current += step;
+        if (current >= counter.target) {
+            current = counter.target;
+            clearInterval(interval);
+        }
+        document.getElementById(counter.id).innerText = current.toLocaleString();
+    }, 20);
+});
+
+// Formulário simples
+const form = document.getElementById('contactForm');
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Mensagem enviada com sucesso!');
+    form.reset();
+});
