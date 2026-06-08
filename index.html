@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header>
+        <div class="container">
+            <h1>🌱 Agro Forte</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de Início -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>O Agro que Alimenta o Mundo</h2>
+            <p>Inovação, produtividade e sustentabilidade no campo.</p>
+            <button onclick="scrollToSection('sobre')">Saiba Mais</button>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>O Agro Forte conecta tecnologia e agricultura para impulsionar a produção rural de forma eficiente e sustentável.</p>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>🚜 Agricultura Digital</h3>
+                    <p>Monitoramento inteligente das lavouras.</p>
+                </div>
+                <div class="card">
+                    <h3>🌾 Sustentabilidade</h3>
+                    <p>Práticas agrícolas modernas e responsáveis.</p>
+                </div>
+                <div class="card">
+                    <h3>📈 Gestão Rural</h3>
+                    <p>Dados e análises para melhores decisões.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Números -->
+    <section id="numeros">
+        <div class="container">
+            <h2>Números do Agro Forte</h2>
+            <div class="stats">
+                <div class="stat">
+                    <h3 id="hectares">0</h3>
+                    <p>Hectares Monitorados</p>
+                </div>
+                <div class="stat">
+                    <h3 id="clientes">0</h3>
+                    <p>Clientes Atendidos</p>
+                </div>
+                <div class="stat">
+                    <h3 id="projetos">0</h3>
+                    <p>Projetos Concluídos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Agro Forte. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
